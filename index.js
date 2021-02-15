@@ -43,15 +43,3 @@ module.exports = function ImportAppImpls(impls){
     helper = new AppBootHelper(cli.flags.config,impls);
     runCommand();
 }
-
-module.exports(
-[class {
-    constructor(config){
-        console.log(config)
-    }
-    start(){
-        console.log("yes");
-    }
-},{
-    abc:123
-}])
